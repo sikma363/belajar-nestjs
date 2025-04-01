@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Nextjs Init",
@@ -17,13 +18,13 @@ export default function RootLayout({
         <section>
           <h1>This Root Layout</h1>
           <article className="flex gap-2">
-            <a href="/" className="link">
+            <Link href="/" className="link">
               Go To /
-            </a>
+            </Link>
             |
-            <a href="/test" className="link">
+            <Link href="/test" className="link">
               Go To /test
-            </a>
+            </Link>
           </article>
         </section>
 
